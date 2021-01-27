@@ -47,23 +47,23 @@ public class MathEquation {
         execute();
     }
 
-    public  static double getAverageResults() {
-        return  sumOfResults/numberOfCalculations;
-    }
+    public static double getAverageResults() { return  sumOfResults/numberOfCalculations; }
 
-    public double setLeftVal(double leftVal) {
-        this.leftVal = leftVal;
-        return leftVal;
-    }
+    public double getLeftVal(){return leftVal;}
 
-    public double setRightVal(double rightVal) {
-        this.rightVal = rightVal;
-        return rightVal;
+    public void  setLeftVal(double leftVal) { this.leftVal = leftVal; }
 
-    }
+    public double getRightVal(){return rightVal;}
 
-    public char setOpCode(char opCode) {
-        this.opCode = opCode;
-        return opCode;
+    public void setRightVal(double rightVal) { this.rightVal = rightVal; }
+
+    public char getOpCode(){return opCode;}
+
+    public void setOpCode(char opCode) { this.opCode = opCode; }
+
+    public double getResult() { return result; }
+
+    public void setResult(double result) {
+        this.result = result;
     }
 }

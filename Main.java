@@ -31,6 +31,6 @@ public class Main {
         double leftDouble = 9.0d;
         double rightDouble = 4.0d;
         equationOverload.execute(leftDouble, rightDouble);
-        System.out.println("overloaded result with double: "+ equationOverload.getAverageResults());
+        System.out.println("overloaded result with double: "+ equationOverload.getResult());
     }
 }
