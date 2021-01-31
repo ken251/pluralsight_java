@@ -32,5 +32,12 @@ public class Main {
         double rightDouble = 4.0d;
         equationOverload.execute(leftDouble, rightDouble);
         System.out.println("overloaded result with double: "+ equationOverload.getResult());
+
+        int leftInt =9;
+        int rightint = 4;
+        equationOverload.execute(leftInt,rightint);
+        System.out.println("Overloaded results with ints: "+equationOverload.getResult());
+        //java can covert ints to double when need be(widening conversions)
+
     }
 }
