@@ -1,10 +1,10 @@
 package com.kennywambu.lessons;
 
 public class MathEquation {
-    double leftVal;
-    double rightVal;
-    char opCode;
-    double result;
+    private double leftVal;
+    private double rightVal;
+    private char opCode;
+    private double result;
 
     private  static  int numberOfCalculations;
     private  static double sumOfResults;

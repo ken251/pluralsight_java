@@ -1,13 +1,24 @@
 package com.kennywambu.lessons;
 
 
+import javafx.scene.control.SplitPane;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        performCalculation();
+       // performCalculation();
+
     }
 
+    static void doCalculation(CalculateBase calculation, double leftVal, double rightVal){
+      calculation.setLeftVal(leftVal);
+      calculation.setRightVal(rightVal);
+      calculation.calculate();
+      System.out.println("Calculation results = " + calculation.getResult());
+
+
+    }
     static void performCalculation() {
         MathEquation[] equations = new MathEquation[4];
         equations[0] = new MathEquation('d',100.0d,50.0d);
@@ -18,7 +29,7 @@ public class Main {
         for(MathEquation equation : equations){
 
             equation.execute();
-            System.out.println("result = " +equation.result);
+            System.out.println("result = " +equation.getResult());
         }
 
         System.out.println("Average result = "+ MathEquation.getAverageResults() );
@@ -38,6 +49,7 @@ public class Main {
         equationOverload.execute(leftInt,rightint);
         System.out.println("Overloaded results with ints: "+equationOverload.getResult());
         //java can covert ints to double when need be(widening conversions)
+
 
     }
 }
