@@ -6,20 +6,22 @@ import javafx.scene.control.SplitPane;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-       // performCalculation();
-          Divider divider = new Divider();
-          doCalculation(divider, 100.0d,50.0d);
+        // write your code here
+        // performCalculation();
+        Divider divider = new Divider();
+        doCalculation(divider, 100.0d, 50.0d);
 
-          Adder adder = new Adder();
-          doCalculation(adder,25.0d,92.0d);
+        Adder adder = new Adder();
+        doCalculation(adder, 25.0d, 92.0d);
+
+
     }
 
     static void doCalculation(CalculateBase calculation, double leftVal, double rightVal){
       calculation.setLeftVal(leftVal);
       calculation.setRightVal(rightVal);
       calculation.calculate();
-      System.out.println("Calculation results = " + calculation.getResult());
+       System.out.println("Calculation results = " + calculation.getResult());
 
 
     }
